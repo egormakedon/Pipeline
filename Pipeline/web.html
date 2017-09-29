@@ -1,0 +1,42 @@
+<!--
+@author: Весь код данной лабораторной работы полностью разработан ст. группы 521701 Македоном Е.А.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>МРЗвИС 1лб</title>
+    <style>
+        #firstVector {
+            text-align: center;
+        }
+
+        #secondVector {
+            text-align: center;
+        }
+
+        #table {
+            text-align: left;
+        }
+    </style>            <!--Подключение css для таблиц, центрирование текста-->
+</head>
+<body>
+    <script src = "scriptFile.js"></script>    <!--Подключение скрипта данной лб работы-->
+
+    M:
+    <input type="text" value="3" onchange="setM(this.value)">       <!--Инициализация поля для ввода M, при изменении поля значение M записывается через функцию в переменную, находящуюся в скрипте-->
+
+    P:
+    <input type="text" value="8" onchange="setP(this.value)">       <!--Инициализация поля для ввода P, при изменении поля значение P записывается через функцию в переменную, находящуюся в скрипте-->
+
+    <input type="button" value="run" onclick="run()"></inputbutton><br><br>     <!--Инициализация кнопки, по нажатии которой вызывается функция запуска выполнения программы-->
+
+    First vector:
+    <table id="firstVector" border="1" width="700px" height="30px"></table><br>     <!--Инициализация таблицы, для вывода на экран 1-го вектора чисел-->
+
+    Second vector:
+    <table id="secondVector" border="1" width="700px" height="30px"></table><br>    <!--Инициализация таблицы, для вывода на экран 2-го вектора чисел-->
+
+    <table id="table" border="1" width="1850px" height="500px"></table>         <!--Инициализация таблицы, для вывода результата работы программы на конвейерной архитектуре-->
+</body>
+</html>
